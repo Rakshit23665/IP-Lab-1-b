@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea{
+            height: 200px;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit" method="POST">
+
+        <header><h1 style="text-align: center;">Custom Tshirt Printing</h1></header>
+        <hr style="margin-bottom: 20px;"/>
+
+        <label for="tagline" style="margin-left: 10px;">Enter tagline: </label>
+        <input type="text" id="tagline" placeholder="Will be printed on the front" height="20px" width="100vw">
+
+        <label for="color" style="margin-left: 30px;">Choose a colour: </label>
+        <select id="color" name="color">
+            <option value="white">White</option>
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="grey">Grey</option>
+        </select>
+
+        <label for="size" style="margin-left: 30px;">Choose a size: </label>
+        <select id="size" name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+            <option value="3XL">3XL</option>
+        </select>
+
+        <label for="quant" style="margin-left: 30px;">Quantity: </label>
+        <input type="number" placeholder="0">
+
+        <fieldset style="margin-top: 20px; margin-bottom: 20px">
+            <legend>Delivery Details</legend>
+            
+            <label for="recipientName">Recipient's Name:</label>
+            <input type="text" id="recipientName" name="recipientName" placeholder="John Doe">
+
+            <label for="address" style="margin-left: 30px;">Address:</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St">
+
+            <label for="email" style="margin-left: 30px;">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com">
+
+            <label for="phone" style="margin-left: 30px;">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="123-456-7890">
+        </fieldset>
+
+        <label for="comments" style="display: block; margin-bottom: 10px">Additional Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Any additional comments or special instructions..." style="display: block; margin-bottom: 20px"></textarea>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+
+</body>
+</html>
